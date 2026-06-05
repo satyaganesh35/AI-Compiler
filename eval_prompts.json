@@ -1,0 +1,116 @@
+{
+  "real_prompts": [
+    {
+      "id": "r1",
+      "label": "CRM",
+      "prompt": "Build a CRM with login, contacts, dashboard, role-based access, and premium plan with payments. Admins can see analytics."
+    },
+    {
+      "id": "r2",
+      "label": "Task Manager",
+      "prompt": "Create a task management app with teams, projects, tasks, due dates, comments, and file attachments. Managers can assign tasks to team members."
+    },
+    {
+      "id": "r3",
+      "label": "E-commerce",
+      "prompt": "Build an e-commerce store with product listings, shopping cart, order management, Stripe payments, and an admin panel for inventory and analytics."
+    },
+    {
+      "id": "r4",
+      "label": "Blog platform",
+      "prompt": "Create a blogging platform where users can write posts, add categories and tags, comment on posts, and subscribe to authors. Admins moderate content."
+    },
+    {
+      "id": "r5",
+      "label": "Booking system",
+      "prompt": "Build a service booking app for salons — customers can browse services, book appointments, pay online, and leave reviews. Staff manage schedules."
+    },
+    {
+      "id": "r6",
+      "label": "LMS",
+      "prompt": "Create a learning management system with courses, lessons, quizzes, student progress tracking, certificates, and instructor dashboards."
+    },
+    {
+      "id": "r7",
+      "label": "HR Portal",
+      "prompt": "Build an HR portal with employee profiles, leave requests, payroll history, performance reviews, and department management for HR admins."
+    },
+    {
+      "id": "r8",
+      "label": "Inventory",
+      "prompt": "Create an inventory management system for a warehouse. Track products, stock levels, suppliers, purchase orders, and low-stock alerts."
+    },
+    {
+      "id": "r9",
+      "label": "Forum",
+      "prompt": "Build a community forum with categories, threads, replies, upvotes, user badges, moderation tools, and private messaging between users."
+    },
+    {
+      "id": "r10",
+      "label": "SaaS dashboard",
+      "prompt": "Build a SaaS analytics dashboard with team workspaces, usage metrics, billing and subscriptions, API key management, and role-based access for admins and viewers."
+    }
+  ],
+  "edge_cases": [
+    {
+      "id": "e1",
+      "type": "vague",
+      "label": "Too vague",
+      "prompt": "Build an app for my business."
+    },
+    {
+      "id": "e2",
+      "type": "vague",
+      "label": "Single word",
+      "prompt": "CRM"
+    },
+    {
+      "id": "e3",
+      "type": "conflicting",
+      "label": "Conflicting roles",
+      "prompt": "All users are admins and also cannot see admin pages. Everyone has full access but guests are restricted."
+    },
+    {
+      "id": "e4",
+      "type": "conflicting",
+      "label": "Conflicting auth",
+      "prompt": "Build a public app with no login required, but all data must be private and only visible to the logged-in user."
+    },
+    {
+      "id": "e5",
+      "type": "incomplete",
+      "label": "Missing context",
+      "prompt": "Build a login system."
+    },
+    {
+      "id": "e6",
+      "type": "incomplete",
+      "label": "Just payments",
+      "prompt": "I need payments integrated."
+    },
+    {
+      "id": "e7",
+      "type": "overspecified",
+      "label": "Very long prompt",
+      "prompt": "Build a comprehensive enterprise-grade CRM system with multi-tenant support, custom domain per tenant, SAML SSO integration, two-factor authentication, OAuth2 login with Google and GitHub, fine-grained RBAC with custom permission sets, contacts with custom fields, companies, deals pipeline with drag-and-drop kanban, email integration with Gmail and Outlook, automated email sequences, lead scoring with ML, activity timeline, notes, tasks, calendar sync, Zoom and Google Meet integrations, Stripe billing with multiple plans, usage-based billing, invoice generation, a white-labeling feature, a public API with rate limiting, webhooks, an admin control panel, team workspaces, audit logs, GDPR data export, and real-time collaboration."
+    },
+    {
+      "id": "e8",
+      "type": "ambiguous",
+      "label": "Ambiguous premium",
+      "prompt": "Build an app where premium users get more features and managers can approve things."
+    },
+    {
+      "id": "e9",
+      "type": "ambiguous",
+      "label": "Unclear entities",
+      "prompt": "I want users to be able to interact with items and track their progress over time."
+    },
+    {
+      "id": "e10",
+      "type": "conflicting",
+      "label": "No backend but needs data",
+      "prompt": "Build a real-time collaborative document editor that works offline, needs no server, but syncs changes across all users instantly."
+    }
+  ]
+}
